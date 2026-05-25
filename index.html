@@ -2,14 +2,8 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <!-- 适配移动端 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>产品故事 | 念樱恋朵玛奇朵</title>
-    <!-- 引入图标库 -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
     <style>
       * {
         margin: 0;
@@ -18,25 +12,57 @@
         font-family: 'Microsoft YaHei', sans-serif;
       }
 
-      /* 页面整体样式 */
       body {
-        background-color: #f8f9fa;
+        background-color: #fff8fa;
         color: #333;
         line-height: 1.8;
+        min-height: 100vh;
+        position: relative;
+        overflow-x: hidden;
       }
 
-      /* 容器：居中显示 */
+      .sakura {
+        position: fixed;
+        top: -50px;
+        color: #ff7aa2;
+        opacity: 0.9;
+        pointer-events: none;
+        z-index: 1;
+        animation: naturalFall linear infinite;
+      }
+
+      @keyframes naturalFall {
+        0% {
+          transform: translate(0, 0) rotate(0deg);
+        }
+        25% {
+          transform: translate(15px, 25vh) rotate(180deg);
+        }
+        50% {
+          transform: translate(-10px, 50vh) rotate(360deg);
+        }
+        75% {
+          transform: translate(20px, 75vh) rotate(540deg);
+        }
+        100% {
+          transform: translate(-5px, 100vh) rotate(720deg);
+        }
+      }
+
       .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
+        background-color: rgba(255, 255, 255, 0.85);
+        border-radius: 16px;
+        position: relative;
+        z-index: 2;
       }
 
-      /* 头部标题 */
       .header {
         text-align: center;
         padding: 60px 20px;
-        background: linear-gradient(to right, #2c3e50, #4ca1af);
+        background: linear-gradient(to right, #d896b8, #f0b8d0);
         color: white;
         border-radius: 12px;
         margin-bottom: 40px;
@@ -52,20 +78,12 @@
         opacity: 0.9;
       }
 
-      /* 产品展示区域 */
       .product-section {
         display: flex;
         flex-wrap: wrap;
         gap: 40px;
         align-items: center;
         margin-bottom: 60px;
-      }
-
-      /* 产品图片 */
-      .product-img {
-        flex: 1;
-        min-width: 300px;
-        text-align: center;
       }
 
       .product-img img {
@@ -80,17 +98,11 @@
         transform: scale(1.03);
       }
 
-      /* 产品故事内容 */
-      .product-story {
-        flex: 1;
-        min-width: 300px;
-      }
-
       .product-story h2 {
         font-size: 28px;
-        color: #2c3e50;
+        color: #a05c80;
         margin-bottom: 20px;
-        border-left: 5px solid #4ca1af;
+        border-left: 5px solid #f0b8d0;
         padding-left: 15px;
       }
 
@@ -101,7 +113,6 @@
         text-align: justify;
       }
 
-      /* 产品亮点 */
       .highlights {
         margin-top: 25px;
       }
@@ -113,23 +124,14 @@
         font-size: 16px;
       }
 
-      .highlight-item i {
-        color: #4ca1af;
-        margin-right: 12px;
-        font-size: 20px;
-      }
-
-      /* 底部品牌寄语 */
       .footer {
         text-align: center;
         padding: 40px 20px;
         color: #666;
-        font-size: 15px;
         border-top: 1px solid #eee;
         margin-top: 40px;
       }
 
-      /* 响应式优化 */
       @media (max-width: 768px) {
         .header h1 {
           font-size: 28px;
@@ -141,22 +143,117 @@
     </style>
   </head>
   <body>
+    <div
+      class="sakura"
+      style="
+        left: 5%;
+        font-size: 24px;
+        animation-duration: 6s;
+        animation-delay: 0s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 15%;
+        font-size: 18px;
+        animation-duration: 9s;
+        animation-delay: 1.2s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 25%;
+        font-size: 22px;
+        animation-duration: 7s;
+        animation-delay: 2s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 38%;
+        font-size: 16px;
+        animation-duration: 10s;
+        animation-delay: 0.5s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 48%;
+        font-size: 26px;
+        animation-duration: 5s;
+        animation-delay: 2.5s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 58%;
+        font-size: 20px;
+        animation-duration: 8s;
+        animation-delay: 1s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 68%;
+        font-size: 23px;
+        animation-duration: 6.5s;
+        animation-delay: 1.8s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 80%;
+        font-size: 17px;
+        animation-duration: 9.5s;
+        animation-delay: 0.8s;
+      "
+    >
+      🌸
+    </div>
+    <div
+      class="sakura"
+      style="
+        left: 90%;
+        font-size: 21px;
+        animation-duration: 7.5s;
+        animation-delay: 2.2s;
+      "
+    >
+      🌸
+    </div>
+
     <div class="container">
-      <!-- 头部标题 -->
       <div class="header">
-        <h1>产品故事 · 源于热爱，忠于品质</h1>
-        <p>每一款产品，都藏着一段用心打磨的故事</p>
+        <h1>产品故事 · 源于爱，忠于品质</h1>
+        <p>每一款产品<br />都藏着一段用心打磨的故事</p>
       </div>
 
-      <!-- 产品展示 + 故事内容 -->
       <div class="product-section">
-        <!-- 产品图片区域 -->
         <div class="product-img">
-          <!-- 替换这里的图片链接为你的产品图片 -->
-          <img src="images/nianyinglianduo.jpg" alt="产品展示图" />
+          <img src="images/drink.jpg" alt="产品展示图" />
         </div>
 
-        <!-- 产品故事介绍 -->
         <div class="product-story">
           <h2>关于这款产品的故事</h2>
           <p>历经八年执念，终调专属一味。</p>
@@ -196,7 +293,6 @@
         </div>
       </div>
 
-      <!-- 底部寄语 -->
       <div class="footer">
         <p>用心做产品 · 用爱讲故事 © 2026 念樱恋朵玛奇朵</p>
       </div>
