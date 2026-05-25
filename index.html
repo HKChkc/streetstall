@@ -1,12 +1,205 @@
-<html lang="en">
+<!doctype html>
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
+    <!-- 适配移动端 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>念樱恋朵玛奇朵</title>
+    <title>产品故事 | 念樱恋朵玛奇朵</title>
+    <!-- 引入图标库 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Microsoft YaHei', sans-serif;
+      }
+
+      /* 页面整体样式 */
+      body {
+        background-color: #f8f9fa;
+        color: #333;
+        line-height: 1.8;
+      }
+
+      /* 容器：居中显示 */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* 头部标题 */
+      .header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(to right, #2c3e50, #4ca1af);
+        color: white;
+        border-radius: 12px;
+        margin-bottom: 40px;
+      }
+
+      .header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      .header p {
+        font-size: 18px;
+        opacity: 0.9;
+      }
+
+      /* 产品展示区域 */
+      .product-section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+
+      /* 产品图片 */
+      .product-img {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+      }
+
+      .product-img img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .product-img img:hover {
+        transform: scale(1.03);
+      }
+
+      /* 产品故事内容 */
+      .product-story {
+        flex: 1;
+        min-width: 300px;
+      }
+
+      .product-story h2 {
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        border-left: 5px solid #4ca1af;
+        padding-left: 15px;
+      }
+
+      .product-story p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+
+      /* 产品亮点 */
+      .highlights {
+        margin-top: 25px;
+      }
+
+      .highlight-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        font-size: 16px;
+      }
+
+      .highlight-item i {
+        color: #4ca1af;
+        margin-right: 12px;
+        font-size: 20px;
+      }
+
+      /* 底部品牌寄语 */
+      .footer {
+        text-align: center;
+        padding: 40px 20px;
+        color: #666;
+        font-size: 15px;
+        border-top: 1px solid #eee;
+        margin-top: 40px;
+      }
+
+      /* 响应式优化 */
+      @media (max-width: 768px) {
+        .header h1 {
+          font-size: 28px;
+        }
+        .product-story h2 {
+          font-size: 24px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="title">念樱恋朵玛奇朵</div>
+    <div class="container">
+      <!-- 头部标题 -->
+      <div class="header">
+        <h1>产品故事 · 源于热爱，忠于品质</h1>
+        <p>每一款产品，都藏着一段用心打磨的故事</p>
+      </div>
 
-    <p>一个人会爱一个从没见过的人多久？至少8年</p>
+      <!-- 产品展示 + 故事内容 -->
+      <div class="product-section">
+        <!-- 产品图片区域 -->
+        <div class="product-img">
+          <!-- 替换这里的图片链接为你的产品图片 -->
+          <img src="images/nianyinglianduo.jpg" alt="产品展示图" />
+        </div>
+
+        <!-- 产品故事介绍 -->
+        <div class="product-story">
+          <h2>关于这款产品的故事</h2>
+          <p>历经八年执念，终调专属一味。</p>
+          <p>
+            心有所念，味自天成。这杯独一无二、全程自研的专属饮品，藏着一个男孩跨越山海跨越时间的深情与执念。
+            从未相见，却朝朝惦念；未曾谋面，却岁岁相思。
+          </p>
+          <p>
+            配比皆是心意，数字皆有归处，每一个精准克数，都是刻在心底与她相关的专属密码；每一味原料选材，皆因她而起，藏着旁人不懂的温柔与偏爱。
+          </p>
+          <p>
+            一杯茶饮，盛满八年初心和满心热忱，亦藏着遥遥相望、始终无缘相见的意难平与遗憾。以自身漫长惦念，祝愿世间所有相遇皆能圆满无憾。
+          </p>
+          <p>
+            一个男孩，能爱一个素未谋面的女孩多久？
+            于他而言，答案是：至少8年。岁岁坚守，皆是最沉默也最滚烫的实际证明，也是对美好感情的笃定向往。
+          </p>
+          <p>
+            因她一人，爱上一座城，这座城市是他八年来的满心期许，
+            因一人执念，赴一城余生。
+          </p>
+          <p>
+            他曾为她倾尽过所有，舍弃过高薪，奔赴过最严重的疫情，一腔真心毫无保留，满腔赤诚从未减半。
+          </p>
+          <p>
+            故事止于屏幕两端，隔着屏幕潦草收场。没有当面告别，没有圆满结局，没有久别重逢，只剩满心遗憾与无法释怀的执念。故事各有结局，相逢即是天意，一切都是最好的安排。
+          </p>
+          <p>
+            时光不语，深情自有回响。所有藏在配料里的数字、融在茶汤里的温柔，都是漫长岁月里最虔诚的告白。每一口回甘，是心底的温柔惦念；每一丝清甜，是藏于岁月的满心热忱。
+          </p>
+          <p>
+            八年朝夕，一念情深，这杯专属限定的心意之作，无关喧嚣，不问归途。只为纪念一场纯粹的心动，珍藏一份漫长的守候，把隔屏的思念、未赴的相见、满腔的温柔，全部融进这一杯独属于彼此的时光味道里。
+          </p>
+          <p>
+            愿每一位遇见这杯茶的人，所爱皆所得，深情不被负，能够拥有长久安稳、双向奔赴的美好爱情。
+          </p>
+        </div>
+      </div>
+
+      <!-- 底部寄语 -->
+      <div class="footer">
+        <p>用心做产品 · 用爱讲故事 © 2026 念樱恋朵玛奇朵</p>
+      </div>
+    </div>
   </body>
 </html>
